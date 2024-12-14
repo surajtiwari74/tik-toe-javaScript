@@ -49,26 +49,19 @@ function Winner()
               if(arr[WINNING_COMBINATIONS[i][j]]===O_CLASS){
                 count1++;
               }
-              
-            
         }   
         if(count===3) {
             endGame()
-           
-            return
-
+             return
         }
         if(count1===3)
         {
            endGame()
-          
             return
         }
         if(tap===9)endGame("draw")
-        
     }
 }
-
 // Update endGame function to display the winner overlay
 const endGame = (draw) => {
      afterwin =1;
